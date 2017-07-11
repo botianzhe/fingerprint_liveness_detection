@@ -1,0 +1,13 @@
+import cv2
+import os
+import numpy as np
+from DataAdd import add
+
+FILEPATH='/home/hkp/project/Data/LivDet2013/Training/Swipe'
+add(FILEPATH+'/Live')
+for filepath in os.listdir(FILEPATH+'/Spoof'):
+	add(FILEPATH+'/Spoof/'+filepath)
+	
+	
+	
+	
